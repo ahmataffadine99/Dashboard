@@ -1,0 +1,17 @@
+POST http://localhost:8080/myyoutubews/user
+Accept: application/json
+Content-Type: application/json
+
+{
+  "pseudo":"dupont",
+  "mdp": "123"
+}
+###
+
+POST http://localhost:8080/users/dupont/playlist
+Authorization: Basic dupont 123
+Content-Type: application/x-www-form-urlencoded
+
+nomPlaylist= MyPlaylist
+
+###

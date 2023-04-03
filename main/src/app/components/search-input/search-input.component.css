@@ -1,0 +1,10 @@
+input {
+    width:290px;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    margin-top: 1px;
+    margin-left: 80px;
+}

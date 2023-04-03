@@ -1,0 +1,14 @@
+{
+  
+  "scripts": {
+    "start": "ng serve",
+    "build": "ng build --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "dependencies": {
+    "ng": "^0.0.0",
+    "package.json": "^2.0.1"
+  }
+}

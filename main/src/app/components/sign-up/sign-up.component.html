@@ -1,0 +1,69 @@
+<div class="displayTable">
+  <div class="displayTableCell">
+
+    <div class="videoo">  
+      <video autoplay muted loop id="myVideo">
+        <source src="assets/background-video.mp4" type="video/mp4">
+        </video>
+    <div class="px-logo">
+      <a href="" target="_blank">
+        <img src="assets/Logo-Dashboard.png" alt="Logo Dashboard">
+      </a>
+    </div>
+
+    <div class="authBlock">
+      <h3>Sign Up</h3>
+
+      <div class="formGroup">
+        <input type="email" class="formControl" placeholder="Email Address" #userEmail required>
+      </div>
+
+      <div class="formGroup">
+        <input type="password" class="formControl" placeholder="Password" #userPwd required>
+      </div>
+
+      <div class="formGroup">
+        <input type="button" class="btn btnPrimary" value="Sign Up" (click)="authService.SignUp(userEmail.value, userPwd.value)">
+      </div>
+
+      <div class="formGroup">
+        <span class="or"><span class="orInner">Or</span></span>
+      </div>
+
+      <!-- Continue with Google -->
+      <div class="formGroup">
+        <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
+          <i class="fab fa-google-plus-g"></i>
+          Continue with Google
+        </button>
+      </div>
+      <div class="formGroup">
+        <button type="button" class="btn githubBtn" (click)="authService.GithubAuth()">
+          <i class="fab fa-github"></i>
+          Continue with Github
+        </button>
+      </div>
+      <div class="formGroup">
+        <button type="button" class="btn facebookBtn" (click)="authService.FacebookAuth()">
+          <i class="fab fa-facebook"></i>
+          Continue with Facebook
+        </button>
+      </div>
+
+      <div class="formGroup">
+        <button type="button" class="btn twitterBtn" (click)="authService.TwitterAuth()">
+          <i class="fab fa-twitter"></i>
+          Continue with Twitter
+        </button>
+      </div>
+
+      <span class="account">Already have an account? <span class="redirect" routerLink="/sign-in">Log In</span></span>
+
+      </div>
+      </div>
+  
+
+
+
+
+</div>

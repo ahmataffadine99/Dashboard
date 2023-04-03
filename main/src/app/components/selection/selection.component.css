@@ -1,0 +1,33 @@
+form {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-color: white;
+    border-radius: 15%;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    z-index: 1 !important;
+    margin-left: 500px;
+}
+
+
+
+.searchb {
+    margin-left: 150px;
+    background-color: #b58edd;
+    color: white;
+    border: none;
+    border-radius: 25%;
+    padding: 5px 10px;
+    z-index: 1 !important;
+    margin-top: -55px;
+    margin-bottom: 20px;
+
+}
+
+.form-control {
+    width: 200px;
+    margin-left: 70px;
+    z-index: 1 !important;
+
+}

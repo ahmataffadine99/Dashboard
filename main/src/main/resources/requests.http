@@ -1,0 +1,16 @@
+GET http://localhost:8080/users
+
+###
+
+
+POST http://localhost:8080/token
+Content-Type: application/json
+
+{
+  "username": "ggg",
+  "password": "tango"
+}
+
+
+###
+

@@ -1,0 +1,163 @@
+
+<!-- Top navigation -->
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0">
+    <img class="brand-logo" src="assets/Logo-Dashboard.png" alt="dashboard Logo">
+  </a>
+</nav>
+
+<!-- Sidebar navigation -->
+<div class="container-fluid">
+  <div class="row">
+
+    <nav class="col-md-2 d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a  href="/userdash" class="nav-link">
+              <i class="fas fa-user"></i>User
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" >
+              <i class="fas fa-chart-line"></i>Dashboard
+
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <i class="fas fa-folder-plus"></i>Widget
+
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <i class="fas fa-cloud"></i>Meteo
+
+              <button class="w3-button w3-blue w3-border" (click)="addNewComponentWeather(weatherCompo)">+</button>
+              <button class="w3-button w3-green w3-border" (click)="removeComponentWeather()">-</button>
+
+
+
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <i class="fab fa-github"></i>Github
+              <button class="w3-button w3-circle w3-blue" (click)="addNewComponentGithub(githubCompo)">+</button>
+              <button class="w3-button w3-circle w3-green" (click)="removeComponentGithub()">-</button>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <i class="fab fa-youtube"></i>Youtube
+
+              <button class="w3-button w3-blue w3-border" (click)="addNewComponentYoutube(youtubeCompo)">+</button>
+              <button class="w3-button w3-blue w3-green" (click)="removeComponentYoutube()">-</button>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <i class="fas fa-calculator"></i>Calculatrice
+
+              <button class="w3-button w3-circle w3-blue" (click)="addNewComponentCalculator(calcuCompo)">+</button>
+              <button class="w3-button w3-circle w3-green" (click)="removeComponentCalculator()">-</button>
+            </a>
+          </li>
+
+
+          <!-- Calling SignOut() Api from AuthService -->
+          <li class="nav-item">
+            <a class="nav-link" (click)="authService.SignOut()">
+              <i class="fas fa-sign-out-alt"></i>Deconnexion
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+
+<br>
+
+  <!-- Use ng-template to ensure that the generated components end up in the right place -->
+ <div class="container">
+  <div class="row">
+    <ng-template  class="row" #containerNews>
+
+    </ng-template>
+    <ng-template  class="row" #containerWeather>
+
+    </ng-template>
+
+    <ng-template  class="row" #containerMovie>
+
+    </ng-template>
+
+
+    <ng-template  class="row" #containerSearchMovie>
+
+    </ng-template>
+
+
+    <ng-template  class="row" #containerExchange>
+
+    </ng-template>
+
+
+
+
+
+    <ng-template  class="row" #containerGithub>
+
+    </ng-template>
+
+
+    <ng-template  class="row" #containerRepo>
+
+    </ng-template>
+
+
+    <ng-template  class="row" #containerYoutube>
+
+    </ng-template>
+
+
+    <ng-template  class="row" #containerCalculator>
+
+    </ng-template>
+
+  </div>
+  </div>
+<div>
+	<ng-template #viewContainerRef></ng-template>
+</div>
+<br>
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+  </div>
+</div>

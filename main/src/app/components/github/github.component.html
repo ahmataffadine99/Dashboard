@@ -1,0 +1,44 @@
+<div class="carda">
+<div class="github">
+<form>
+    <div class="form-group">
+        <h1>Github User</h1>
+        <input class="form-control"type="text" name="search" [(ngModel)]='username' (keyup)="findUser()">
+    </div>
+</form>
+<div *ngIf="user" class="container">
+    <div class="card bg-light">
+        <div class="card-header">
+            Username: {{user.login}}
+        </div>
+
+        <div class="card-body">
+            <div class="row">
+                <div class='col-sm-3'>
+                    <img [src]='user.avatar_url' [title]='user.name' [style.width.px]='imageWidth'
+                        [style.height.px]='imageHeight'>
+                </div>
+
+                <div class="col-sm-9">
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Username: </strong> {{user.login}}</li>
+                        <li class="list-group-item"><strong>Name: </strong> {{user.name}}</li>
+                        <li class="list-group-item"><strong>Email: </strong> {{user.email}}</li>
+                        <li class="list-group-item"><strong>Location: </strong> {{user.location}}</li>
+                        <li class="list-group-item"><strong>Created: </strong> {{user.created_at | dateAgo}}</li>
+                    </ul>
+
+                    <div class="stats">
+                        <span class="btn btn-secondary">{{user.followers}} Followers</span>
+                        <span class="btn btn-primary">Following {{user.following}}</span>
+                        <span class="btn btn-success">{{user.public_repos}} Public Repos</span>
+                        <span class="btn btn-info">{{user.public_gists}} Public Gists</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+

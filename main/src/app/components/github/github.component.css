@@ -1,0 +1,43 @@
+.btn{
+    margin: 2%;
+} 
+
+.container {
+    width: 800px;
+    height: 300px;
+}
+
+.form-group {
+}
+
+.github {
+    width: 800px;
+    height: 450px;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+h3 {
+    color: blue;
+}
+
+form {
+    margin-left: 250px;
+    width: 300px;
+}
+
+.carda{
+    margin-left: 320px;
+    margin-bottom: 50px;
+    width: 850px;
+    height: 470px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background: linear-gradient(to top,white,black 100%);
+
+}

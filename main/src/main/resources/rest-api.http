@@ -1,0 +1,68 @@
+POST http://localhost:8080/users/login
+Authorization: Basic user 2e000390-71a2-4f69-88e0-6dc7ef1d6b2e
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "dupon",
+  "password": "lepen",
+  "role": "User"
+}
+
+
+###
+
+POST http://localhost:8080/myyoutubews/authen/dupont
+Content-Type: application/x-www-form-urlencoded
+token: Bearerdupont
+
+mdp=123
+
+###
+POST http://localhost:8080/myyoutubews/user/dupont/playlist
+Content-Type: application/x-www-form-urlencoded
+token: Bearerdupont
+
+nomPlaylist= MyPlaylist
+
+###
+
+GET http://localhost:8080/myyoutubews/user/dupont/playlist
+Authorization: Basic user 2e000390-71a2-4f69-88e0-6dc7ef1d6b2e
+token: Bearerdupont
+
+###
+
+
+POST http://localhost:8080/myyoutubews/user/dupont/depotVideo
+Content-Type: application/json
+token: Bearerdupont
+
+{"titre": "fifa 21",
+"url": "www.fifa.fr",
+"description": "Le jeu de fifa sur ps5"
+}
+
+###
+
+
+
+GET http://localhost:8080/myyoutubews/user/dupont/videos
+Content-Type: application/x-www-form-urlencoded
+token: Bearerdupont
+
+###
+
+
+
+GET http://localhost:8080/myyoutubews/user/videos/dupont
+token: Bearerdupont
+
+###
+
+
+GET http://localhost:8080/myyoutubews/user/dupont/profil
+Content-Type: application/x-www-form-urlencoded
+token: Bearerdupont
+
+###

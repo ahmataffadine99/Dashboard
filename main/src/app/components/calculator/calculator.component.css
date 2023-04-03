@@ -1,0 +1,57 @@
+.maindisplay {
+    background: lightgrey;
+    font-size: 2rem;
+    text-align: center;
+    font-family: Courier, monospace;
+    overflow: auto;
+    width: 300px;
+    height: 95px;
+    margin-left: 500px;
+    border-radius: 5%;
+}
+.subdisplay {
+    border-bottom: 1px solid black;
+    font-size: 2rem;
+    overflow: auto;
+    width: 100px;
+    text-align: center;
+    margin-left: 90px;
+}
+.keypad {
+    width: 300px;
+    margin-bottom: 50px;
+    margin-left: 500px;
+    border-radius: 5%;
+
+
+}
+.keys {
+    margin: 0;
+    width: 25%;
+    height: 20%;
+    background: black;
+    color: white;
+    padding: 5%;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.one-line {
+    display: inline-block;
+}
+
+.keysequakeyone-line {
+    width: 300px;
+    background-color: red;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    border-radius: 5%;
+
+
+}
+
+.cardo {
+    margin-bottom: 50px;
+}
